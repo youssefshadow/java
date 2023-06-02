@@ -1,12 +1,26 @@
+import java.util.Scanner;
+
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Le résultat de la soustraction est égal à : " + subtraction(52, 14, 8));
-        //int a = 10;
-        //int b = 15;
-        intervertir(10,5);
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Veuillez saisir  la valeur de i :");
+        int i = scanner.nextInt();
 
+        System.out.println("Veuillez saisir  la valeur de j :");
+        int j = scanner.nextInt();
+
+        System.out.println("Veuillez saisir  la valeur de k :");
+        int k = scanner.nextInt();
+
+        int resultat = subtraction(i, j, k);
+
+        System.out.println("Le résultat de la soustraction est égal à : " + resultat);
     }
+
+
+
 
     public static int subtraction(int i, int j, int k) {
         return i - j - k;
