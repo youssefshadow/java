@@ -4,7 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+           int nombre = secretNumber(scanner);
+           System.out.println("Le nombre choisi est : " + nombre);
 //        System.out.println("Veuillez saisir la valeur de i :");
 //        int i = lire(scanner);
 //
@@ -66,16 +67,25 @@ public class Main {
     }
 
    public static String heure(int heure, int minutes) {
-           minutes++; //j'ajoute +1 à chaque fois
+           minutes++; //j'ajouter +1 à chaque fois
 
            if (minutes >= 60) {
                heure++;
                minutes = 0; 
            }
-
-
-
-
         return heure + " heure " + minutes;
     }
+    public static int secretNumber(Scanner scanner) {
+           int nombre;
+   
+           System.out.println("Veuillez saisir un nombre entre 1 et 3 : ");
+           nombre = scanner.nextInt();
+   
+           while (nombre < 1 || nombre > 3) {
+               System.out.println("Nombre invalide. Veuillez saisir un nombre entre 1 et 3 : ");
+               nombre = scanner.nextInt();
+           }
+
+           return nombre;
+}
 }
