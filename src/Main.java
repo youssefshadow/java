@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Hello and welcome!");
         int nbr1 = 10;
         int nbr2 = 5 ;
-        System.out.println(nbr1 + nbr2);
+        System.out.println("Le Résultat est égal ="+(nbr1 + nbr2));
 
     }
 
